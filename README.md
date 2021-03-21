@@ -21,7 +21,7 @@ public-hoist-pattern[]=*
 
 Or install `prettier` yourself in your `devDependencies`.
 
-If using `npm`, the prettier dependency is hosted automatically.
+If using `npm`, the prettier dependency is hoisted automatically.
 
 </details>
 
@@ -53,7 +53,7 @@ Notice that the built folders like `dist` are in the above list.
 
 ### Modifying the config
 
-Create a `prettier.config.js` file at the root of the project with the following content:
+Instead of adding the `prettier` entry to `package.json`, create a `prettier.config.js` file at the root of the project with the following content:
 
 ```js
 module.exports = {
