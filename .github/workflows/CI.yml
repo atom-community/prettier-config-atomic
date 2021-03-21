@@ -76,7 +76,7 @@ jobs:
         uses: cycjimmy/semantic-release-action@v2
         with:
           extends: |
-            @atom-community/semantic-release-npm-config
+            @atom-ide-community/semantic-release-npm-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN  }}
