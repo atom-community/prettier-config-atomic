@@ -64,3 +64,34 @@ module.exports = {
   // semi: true,
 }
 ```
+
+### GitHub Action Lint Job:
+
+```yaml
+Lint:
+  if: "!contains(github.event.head_commit.message, '[skip ci]')"
+  runs-on: ubuntu-latest
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Commit lint ✨
+      uses: wagoid/commitlint-github-action@v2
+
+    - uses: atom-community/action-setup-atom@v1
+    - name: Setup PNPM
+      uses: pnpm/action-setup@master
+      with:
+        version: latest
+
+    - name: Install dependencies
+      run: pnpm install
+
+    - name: Format ✨
+      run: pnpm test.format
+
+    - name: Lint ✨
+      run: pnpm test.lint
+```
