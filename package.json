@@ -1,0 +1,33 @@
+{
+  "name": "prettier-config-atomic",
+  "main": "./prettier.config.js",
+  "version": "0.1.0",
+  "files": [
+    "./prettier.config.js"
+  ],
+  "author": "Amin Yahyaabadi",
+  "description": "The Prettier configuration used in atom-ide-community",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "prettier-preset",
+    "format",
+    "beautify"
+  ],
+  "repository": "https://github.com/atom-ide-community/prettier",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write .",
+    "test.format": "prettier . --check",
+    "lint": "eslint . --fix",
+    "test.lint": "eslint .",
+    "bump": "ncu -u"
+  },
+  "dependencies": {
+    "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-atomic": "^1.12.4"
+  }
+}
