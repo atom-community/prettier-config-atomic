@@ -1,6 +1,6 @@
 # prettier-config-atomic
 
-The Prettier configuration used in atom-ide-community.
+The Prettier configuration used in atom-community.
 
 This configuration supports all the formats including `typescript`, `javascript`, `json`, `yaml`, and `markdown`.
 

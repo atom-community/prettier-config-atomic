@@ -6,7 +6,7 @@
     "./prettier.config.js"
   ],
   "author": "Amin Yahyaabadi",
-  "description": "The Prettier configuration used in atom-ide-community",
+  "description": "The Prettier configuration used in atom-community",
   "keywords": [
     "prettier",
     "prettier-config",
@@ -14,7 +14,7 @@
     "format",
     "beautify"
   ],
-  "repository": "https://github.com/atom-ide-community/prettier",
+  "repository": "https://github.com/atom-community/prettier",
   "license": "MIT",
   "scripts": {
     "format": "prettier --write .",
