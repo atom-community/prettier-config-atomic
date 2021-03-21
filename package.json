@@ -14,7 +14,7 @@
     "format",
     "beautify"
   ],
-  "repository": "https://github.com/atom-community/prettier",
+  "repository": "https://github.com/atom-community/prettier-config-atomic",
   "license": "MIT",
   "scripts": {
     "format": "prettier --write .",
