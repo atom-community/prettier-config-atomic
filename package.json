@@ -3,7 +3,7 @@
   "main": "./prettier.config.js",
   "version": "1.0.0",
   "files": [
-    "./prettier.config.js"
+    "prettier.config.js"
   ],
   "author": "Amin Yahyaabadi",
   "description": "The Prettier configuration used in atom-community",
