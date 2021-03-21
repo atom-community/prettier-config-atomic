@@ -30,7 +30,7 @@ Add the following to your `package.json`
 "prettier": "prettier-config-atomic",
 "scripts": {
   "format": "prettier --write .",
-  "test.format": "prettier . --check",
+  "test.format": "prettier . --check"
 }
 ```
 and run `npm run format` to format the files. You can also use `npm run test.format` in the CI to test formatting of the project.
