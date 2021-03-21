@@ -45,6 +45,7 @@ To ignore some files from formatting, create a `.prettierignore` file and add th
 node_modules
 pnpm-lock.yaml
 package-lock.json
+CHANGELOG.md
 dist
 ```
 
