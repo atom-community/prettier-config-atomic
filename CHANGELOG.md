@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/atom-community/prettier-config-atomic/compare/v1.0.0...v1.0.1) (2021-03-21)
+
+
+### Bug Fixes
+
+* npm didn't include the file in the release ([809aea5](https://github.com/atom-community/prettier-config-atomic/commit/809aea5ff82d4eace15d892ff6390e0935dd2687))
+
 # 1.0.0 (2021-03-21)
 
 
