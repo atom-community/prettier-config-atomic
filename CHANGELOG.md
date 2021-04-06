@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/atom-community/prettier-config-atomic/compare/v1.0.1...v2.0.0) (2021-04-06)
+
+
+### Features
+
+* add prettier-plugin-jsdoc ([dbb8edd](https://github.com/atom-community/prettier-config-atomic/commit/dbb8edd9e03a3448bd79a0beeeb6d636364d590c))
+
+
+### BREAKING CHANGES
+
+* now the docs are formatted
+
 ## [1.0.1](https://github.com/atom-community/prettier-config-atomic/compare/v1.0.0...v1.0.1) (2021-03-21)
 
 
