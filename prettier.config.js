@@ -1,8 +1,12 @@
 module.exports = {
+  plugins: ["prettier-plugin-jsdoc"],
   tabWidth: 2,
   printWidth: 120,
   semi: false,
   singleQuote: false,
+  // use tsdoc instead
+  jsdocParser: false,
+  tsdoc: true,
   overrides: [
     {
       files: "{*.json}",
