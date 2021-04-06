@@ -24,7 +24,8 @@
     "bump": "ncu -u"
   },
   "dependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "prettier-plugin-jsdoc": "^0.3.18"
   },
   "devDependencies": {
     "eslint": "^7.22.0",
