@@ -81,7 +81,6 @@ Lint:
     - name: Commit lint ✨
       uses: wagoid/commitlint-github-action@v2
 
-    - uses: atom-community/action-setup-atom@v1
     - name: Setup PNPM
       uses: pnpm/action-setup@master
       with:
