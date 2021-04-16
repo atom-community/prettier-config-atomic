@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "prettier": "^2.2.1",
-    "prettier-plugin-jsdoc": "^0.3.18"
+    "prettier-plugin-jsdoc": "^0.3.19"
   },
   "devDependencies": {
     "eslint": "^7.22.0",

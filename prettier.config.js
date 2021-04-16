@@ -4,7 +4,6 @@ module.exports = {
   printWidth: 120,
   semi: false,
   singleQuote: false,
-  jsdocParser: true,
   tsdoc: true,
   overrides: [
     {
