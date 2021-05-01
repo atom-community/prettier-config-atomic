@@ -25,10 +25,10 @@
   },
   "dependencies": {
     "prettier": "^2.2.1",
-    "prettier-plugin-jsdoc": "^0.3.19"
+    "prettier-plugin-jsdoc": "^0.3.21"
   },
   "devDependencies": {
-    "eslint": "^7.22.0",
-    "eslint-config-atomic": "^1.12.4"
+    "eslint": "^7.25.0",
+    "eslint-config-atomic": "^1.14.2"
   }
 }
