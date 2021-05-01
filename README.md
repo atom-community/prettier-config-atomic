@@ -81,17 +81,12 @@ Lint:
     - name: Commit lint ✨
       uses: wagoid/commitlint-github-action@v2
 
-    - name: Setup PNPM
-      uses: pnpm/action-setup@master
-      with:
-        version: latest
-
     - name: Install dependencies
-      run: pnpm install
+      run: npm install
 
     - name: Format ✨
-      run: pnpm test.format
+      run: npm run test.format
 
     - name: Lint ✨
-      run: pnpm test.lint
+      run: npm run test.lint
 ```
