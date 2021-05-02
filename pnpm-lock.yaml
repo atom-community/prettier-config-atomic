@@ -4,11 +4,11 @@ specifiers:
   eslint: ^7.25.0
   eslint-config-atomic: ^1.14.2
   prettier: ^2.2.1
-  prettier-plugin-jsdoc: ^0.3.21
+  prettier-plugin-jsdoc: ^0.3.22
 
 dependencies:
   prettier: 2.2.1
-  prettier-plugin-jsdoc: 0.3.21_prettier@2.2.1
+  prettier-plugin-jsdoc: 0.3.22_prettier@2.2.1
 
 devDependencies:
   eslint: 7.25.0
@@ -2128,8 +2128,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-jsdoc/0.3.21_prettier@2.2.1:
-    resolution: {integrity: sha512-QiYtjym/lcpbwgGERfvwd7z73GW2NNEpfz0EwiqnPtYM3xrxbskuD7oquLKrRmEuN0DhiWomXFwIBquE26Rjrw==}
+  /prettier-plugin-jsdoc/0.3.22_prettier@2.2.1:
+    resolution: {integrity: sha512-8CuzIovyy0FQmt2QgrueYlnqOiYfC68TZsMQ5NRJJEb+JkWJekpO/3KWRJIkBQE/9dIT4Y0CVDqng6TqnoKJvA==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       prettier: '>=2.1.2'
