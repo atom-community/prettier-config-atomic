@@ -24,11 +24,11 @@
     "bump": "ncu -u"
   },
   "dependencies": {
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "prettier-plugin-jsdoc": "^0.3.22"
   },
   "devDependencies": {
-    "eslint": "^7.25.0",
-    "eslint-config-atomic": "^1.14.2"
+    "eslint": "^7.26.0",
+    "eslint-config-atomic": "^1.14.4"
   }
 }
