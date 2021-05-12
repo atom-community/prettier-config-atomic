@@ -1,3 +1,10 @@
+## [2.0.5](https://github.com/atom-community/prettier-config-atomic/compare/v2.0.4...v2.0.5) (2021-05-12)
+
+
+### Bug Fixes
+
+* update dependencies ([3533a3f](https://github.com/atom-community/prettier-config-atomic/commit/3533a3fb9a9aa8277cf0ebee82f73e1de22f348a))
+
 ## [2.0.4](https://github.com/atom-community/prettier-config-atomic/compare/v2.0.3...v2.0.4) (2021-05-02)
 
 
