@@ -3,12 +3,12 @@ lockfileVersion: 5.3
 specifiers:
   eslint: ^7.27.0
   eslint-config-atomic: ^1.15.2
-  prettier: ^2.3.0
-  prettier-plugin-jsdoc: ^0.3.22
+  prettier: ^2.3.2
+  prettier-plugin-jsdoc: ^0.3.23
 
 dependencies:
-  prettier: 2.3.0
-  prettier-plugin-jsdoc: 0.3.22_prettier@2.3.0
+  prettier: 2.3.2
+  prettier-plugin-jsdoc: 0.3.23_prettier@2.3.2
 
 devDependencies:
   eslint: 7.27.0
@@ -2151,8 +2151,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-jsdoc/0.3.22_prettier@2.3.0:
-    resolution: {integrity: sha512-8CuzIovyy0FQmt2QgrueYlnqOiYfC68TZsMQ5NRJJEb+JkWJekpO/3KWRJIkBQE/9dIT4Y0CVDqng6TqnoKJvA==}
+  /prettier-plugin-jsdoc/0.3.23_prettier@2.3.2:
+    resolution: {integrity: sha512-dHLzMG1oYARnYEbOC4RiJelcsV5tG6IaTzYr2dBey8cj6zzJZpTzhlm+Fc6c4SnSz3LRZCJVtGv42CulLlKKVw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       prettier: '>=2.1.2'
@@ -2161,7 +2161,7 @@ packages:
       comment-parser: 1.1.4
       linguist-languages: 7.13.0
       mdast-util-from-markdown: 0.8.5
-      prettier: 2.3.0
+      prettier: 2.3.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2170,6 +2170,13 @@ packages:
     resolution: {integrity: sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    dev: true
+
+  /prettier/2.3.2:
+    resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
 
   /progress/2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
