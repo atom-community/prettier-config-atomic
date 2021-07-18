@@ -28,7 +28,7 @@
     "prettier-plugin-jsdoc": "^0.3.22"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
-    "eslint-config-atomic": "^1.15.2"
+    "eslint": "^7.31.0",
+    "eslint-config-atomic": "^1.16.2"
   }
 }
