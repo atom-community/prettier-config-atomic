@@ -1,35 +1,36 @@
 {
   "name": "prettier-config-atomic",
-  "main": "./prettier.config.js",
   "version": "2.0.6",
+  "description": "The Prettier configuration used in atom-community",
+  "repository": "https://github.com/atom-community/prettier-config-atomic",
+  "license": "MIT",
+  "author": "Amin Yahyaabadi",
+  "main": "./prettier.config.js",
   "files": [
     "prettier.config.js"
   ],
-  "author": "Amin Yahyaabadi",
-  "description": "The Prettier configuration used in atom-community",
+  "scripts": {
+    "bump": "ncu -u",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint ."
+  },
+  "dependencies": {
+    "prettier": "^2.4.1",
+    "prettier-plugin-jsdoc": "^0.3.24",
+    "prettier-plugin-packagejson": "^2.2.13",
+    "sort-package-json": "github:aminya/sort-package-json"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-atomic": "^1.16.3"
+  },
   "keywords": [
     "prettier",
     "prettier-config",
     "prettier-preset",
     "format",
     "beautify"
-  ],
-  "repository": "https://github.com/atom-community/prettier-config-atomic",
-  "license": "MIT",
-  "scripts": {
-    "format": "prettier --write .",
-    "test.format": "prettier . --check",
-    "lint": "eslint . --fix",
-    "test.lint": "eslint .",
-    "bump": "ncu -u"
-  },
-  "dependencies": {
-    "prettier": "^2.4.1",
-    "prettier-plugin-jsdoc": "^0.3.24",
-    "prettier-plugin-packagejson": "^2.2.13"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-atomic": "^1.16.3"
-  }
+  ]
 }
