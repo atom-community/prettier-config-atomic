@@ -1,3 +1,20 @@
+# [3.0.0](https://github.com/atom-community/prettier-config-atomic/compare/v2.0.6...v3.0.0) (2021-10-02)
+
+
+### Bug Fixes
+
+* use custom sort-package-json to put keywords in the end ([acca570](https://github.com/atom-community/prettier-config-atomic/commit/acca57044eeeec9425e0294fd4dd999e2f375905))
+
+
+### Features
+
+* add prettier-plugin-packagejson ([047d6b2](https://github.com/atom-community/prettier-config-atomic/commit/047d6b2e38be2ac14d53c8d767c485f08793c78a))
+
+
+### BREAKING CHANGES
+
+* package.json is now sorted
+
 ## [2.0.6](https://github.com/atom-community/prettier-config-atomic/compare/v2.0.5...v2.0.6) (2021-09-21)
 
 
