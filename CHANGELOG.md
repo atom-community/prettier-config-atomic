@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.0...v3.0.1) (2021-10-02)
+
+
+### Bug Fixes
+
+* inline the plugin into a function ([9ed6476](https://github.com/atom-community/prettier-config-atomic/commit/9ed6476afc83ccea79b577b880ca87998cb91a0a))
+
 # [3.0.0](https://github.com/atom-community/prettier-config-atomic/compare/v2.0.6...v3.0.0) (2021-10-02)
 
 
