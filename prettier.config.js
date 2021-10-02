@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["prettier-plugin-jsdoc"],
+  plugins: ["prettier-plugin-jsdoc", "prettier-plugin-packagejson"],
   tabWidth: 2,
   printWidth: 120,
   semi: false,
