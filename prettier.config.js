@@ -27,7 +27,7 @@ function prettier_plugin_packagejson() {
 }
 
 module.exports = {
-  plugins: ["prettier-plugin-jsdoc", prettier_plugin_packagejson()],
+  plugins: ["prettier-plugin-jsdoc", prettier_plugin_packagejson(), "prettier-plugin-toml"],
   tabWidth: 2,
   printWidth: 120,
   semi: false,
