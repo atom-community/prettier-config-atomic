@@ -23,8 +23,7 @@
     "sort-package-json": "github:aminya/sort-package-json"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-atomic": "^1.16.3"
+    "eslint-config-atomic": "^1.16.4"
   },
   "keywords": [
     "prettier",
