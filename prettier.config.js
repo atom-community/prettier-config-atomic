@@ -3,7 +3,9 @@ function prettier_plugin_packagejson() {
   function requireSafe(path) {
     try {
       return require(path)
-    } catch (error) {}
+    } catch (error) {
+      // no operations
+    }
   }
 
   const { parsers } = requireSafe("prettier/parser-babel") || requireSafe("prettier/parser-babylon")
@@ -14,7 +16,8 @@ function prettier_plugin_packagejson() {
     parsers: {
       "json-stringify": {
         ...parser,
-        preprocess(text, options) {
+        preprocess(text_given, options) {
+          let text = text_given
           if (parser.preprocess) {
             text = parser.preprocess(text, options)
           }
