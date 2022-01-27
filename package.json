@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-atomic",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "The Prettier configuration used in atom-community",
   "repository": "https://github.com/atom-community/prettier-config-atomic",
   "license": "MIT",
