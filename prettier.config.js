@@ -1,5 +1,5 @@
+// Modified from https://github.com/matzkoh/prettier-plugin-packagejson to use the custom sort-package.json package
 function prettier_plugin_packagejson() {
-  // Modified from https://github.com/matzkoh/prettier-plugin-packagejson to use the custom sort-package.json package
   function requireSafe(path) {
     try {
       return require(path)
@@ -30,7 +30,7 @@ function prettier_plugin_packagejson() {
 }
 
 module.exports = {
-  plugins: ["prettier-plugin-jsdoc", prettier_plugin_packagejson()],
+  plugins: [require("prettier-plugin-jsdoc"), prettier_plugin_packagejson()],
   tabWidth: 2,
   printWidth: 120,
   semi: false,
