@@ -1,3 +1,11 @@
+## [3.0.4](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.3...v3.0.4) (2022-03-11)
+
+
+### Bug Fixes
+
+* bump deps ([659ac08](https://github.com/atom-community/prettier-config-atomic/commit/659ac086a9c36c13e0a41b104143206518f25e1f))
+* require prettier-plugin-jsdoc ([257495a](https://github.com/atom-community/prettier-config-atomic/commit/257495a8d928cdca21dbfdda7cc044944cc00d15))
+
 ## [3.0.3](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.2...v3.0.3) (2022-01-27)
 
 
