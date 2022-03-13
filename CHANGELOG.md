@@ -1,3 +1,10 @@
+## [3.0.6](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.5...v3.0.6) (2022-03-13)
+
+
+### Reverts
+
+* Revert "fix(deps): update dependency prettier to v2.5.1" ([2589e78](https://github.com/atom-community/prettier-config-atomic/commit/2589e7846fb0a990de9a08926afc685123746208))
+
 ## [3.0.5](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.4...v3.0.5) (2022-03-12)
 
 
