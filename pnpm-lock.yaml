@@ -4,18 +4,18 @@ importers:
 
   .:
     specifiers:
-      eslint-config-atomic: ^1.17.0
-      prettier: 2.4.1
-      prettier-plugin-jsdoc: ^0.3.30
+      eslint-config-atomic: ^1.17.1
+      prettier: 2.6.0
+      prettier-plugin-jsdoc: ^0.3.31
       prettier-plugin-packagejson: ^2.2.16
       sort-package-json: github:aminya/sort-package-json
     dependencies:
-      prettier: 2.4.1
-      prettier-plugin-jsdoc: 0.3.30_prettier@2.4.1
-      prettier-plugin-packagejson: 2.2.16_prettier@2.4.1
+      prettier: 2.6.0
+      prettier-plugin-jsdoc: 0.3.31_prettier@2.6.0
+      prettier-plugin-packagejson: 2.2.16_prettier@2.6.0
       sort-package-json: github.com/aminya/sort-package-json/076051b58be7b198732d1ce2b9a415ccd0c63a97
     devDependencies:
-      eslint-config-atomic: 1.17.0
+      eslint-config-atomic: 1.17.1
 
 packages:
 
@@ -1169,8 +1169,8 @@ packages:
     dev: true
     optional: true
 
-  /eslint-config-atomic/1.17.0:
-    resolution: {integrity: sha512-96XtC0dDt9T3gq3/X+JSIc3tbLn+YtxevV40DYdopHOWAsNgnooFtCUi+urKF92EwpOkxXeT/dSdy/Ofz0RVRA==}
+  /eslint-config-atomic/1.17.1:
+    resolution: {integrity: sha512-LFytMqabif4bB59bV8s3pc1gN/UNzRY53l5F8mzZQLKmSETXQ2UDTEJ62l8xyQocMsDcaCaY5ALNmJqBngIAFQ==}
     dependencies:
       '@babel/core': 7.17.5
       '@babel/eslint-parser': 7.17.0_@babel+core@7.17.5+eslint@7.32.0
@@ -1381,7 +1381,7 @@ packages:
       doctrine: 2.1.0
       eslint: 7.32.0
       has: 1.0.3
-      jsx-ast-utils: 2.4.1
+      jsx-ast-utils: 3.2.1
       minimatch: 3.1.2
       object.entries: 1.1.5
       object.fromentries: 2.0.5
@@ -2406,8 +2406,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-jsdoc/0.3.30_prettier@2.4.1:
-    resolution: {integrity: sha512-BTBojOMmrUA1qsWLpJN5whUfU/E72WBUQAB5AvrDkha+O8TxmqaAivnuW+87ItYGRPBFWWzj2r5iWELhBml1Ag==}
+  /prettier-plugin-jsdoc/0.3.31_prettier@2.6.0:
+    resolution: {integrity: sha512-/YDoJtEwPLRU4fKKjsWqqWHGII4AEzmNsnLglIDxj3iduWeVinT+fjKyez/eHq4oaawqXVt8JxNpbm5WVakN1Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       prettier: '>=2.1.2'
@@ -2416,17 +2416,17 @@ packages:
       comment-parser: 1.3.0
       linguist-languages: 7.15.0
       mdast-util-from-markdown: 0.8.5
-      prettier: 2.4.1
+      prettier: 2.6.0
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /prettier-plugin-packagejson/2.2.16_prettier@2.4.1:
+  /prettier-plugin-packagejson/2.2.16_prettier@2.6.0:
     resolution: {integrity: sha512-nlLXAcw0xz3X1a8qSWSG9CEcAJXq5djdbpHq5lYRM8K50+s+xvLwUa0gvzqyJ80VjdtLLLgB+Pqp8hoN0Y+cEQ==}
     peerDependencies:
       prettier: '>= 1.16.0'
     dependencies:
-      prettier: 2.4.1
+      prettier: 2.6.0
       sort-package-json: 1.54.0
     dev: false
 
@@ -2434,6 +2434,13 @@ packages:
     resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+    dev: true
+
+  /prettier/2.6.0:
+    resolution: {integrity: sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
 
   /progress/2.0.3:
     resolution: {integrity: sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==}
