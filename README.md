@@ -23,8 +23,8 @@
 
 This config supports all the formats including:
 
-- **Typescript**
-- **Javascript**
+- **TypeScript**
+- **JavaScript**
 - **Markdown**
 - **YAML**
 - **JSON**

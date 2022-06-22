@@ -1,21 +1,43 @@
 
-## Installation
+# Installation
 
-```
-npm install --save-dev prettier-config-atomic
-```
+<br>
 
-<details>
-<summary>This package also needs `prettier`.</summary>
+## Dependencies
 
-Either add the following to your `.npmrc` if using `pnpm` to hoist the prettier bundled with the config
+You will require `prettier`.
 
-```
+<br>
+
+### PNPM
+
+If you use this method, simply add the <br>
+following code to your `.npmrc` config.
+
+```npmrc
 public-hoist-pattern[]=*
 ```
 
-Or install `prettier` yourself in your `devDependencies`.
+<br>
 
-If using `npm`, the prettier dependency is hoisted automatically.
+### Manual
 
-</details>
+Alternatively you can also install `prettier` <br>
+in your `devDependencies` by yourself.
+
+*If you are using `npm`, the prettier* <br>
+*dependency is hoisted automatically.*
+
+<br>
+<br>
+
+## Installing
+
+```sh
+npm install     \
+    --save-dev  \
+    prettier-config-atomic
+```
+
+
+
