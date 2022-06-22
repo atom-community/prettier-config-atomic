@@ -1,3 +1,10 @@
+## [3.0.10](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.9...v3.0.10) (2022-06-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prettier to v2.7.1 ([2825b26](https://github.com/atom-community/prettier-config-atomic/commit/2825b26f29e8cd1d67e29ea4ac1a7b26de40d7cf))
+
 ## [3.0.9](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.8...v3.0.9) (2022-04-02)
 
 
