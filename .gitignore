@@ -1,13 +1,21 @@
-# OS metadata
+
+# OS Metadata
+
 .DS_Store
 Thumbs.db
 
+
 # Node
+
 node_modules
 package-lock.json
 
+
 # TypeScript
+
 *.tsbuildinfo
 
-# Build directories
+
+# Build Folders
+
 dist
