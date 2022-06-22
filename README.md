@@ -1,8 +1,22 @@
-# prettier-config-atomic
 
-The Prettier configuration used in atom-community.
+# Prettier
 
-This configuration supports all the formats including `typescript`, `javascript`, `json`, `yaml`, and `markdown`.
+*The **[Prettier]** config used in **[Atom-Community]**.*
+
+<br>
+
+## Supported Formats
+
+This config supports all the formats including:
+
+- **Typescript**
+- **Javascript**
+- **Markdown**
+- **YAML**
+- **JSON**
+
+<br>
+<br>
 
 ## Installation
 
@@ -90,3 +104,9 @@ Lint:
     - name: Lint ✨
       run: npm run test.lint
 ```
+
+
+<!----------------------------------------------------------------------------->
+
+[Atom-Community]: https://github.com/atom-community
+[Prettier]: https://prettier.io/
