@@ -1,5 +1,5 @@
 
-# Prettier
+# Prettier   [![Badge License]][License]   
 
 *The **[Prettier]** config used in **[Atom-Community]**.*
 
@@ -9,9 +9,9 @@
 
 ---
 
-[![Button Install]][Install] 
-[![Button Usage]][Usage] 
-[![Button Changelog]][Changelog] 
+[![Button Install]][Install]   
+[![Button Usage]][Usage]   
+[![Button Changelog]][Changelog]
 
 ---
 
@@ -38,11 +38,17 @@ This config supports all the formats including:
 [Prettier]: https://prettier.io/
 
 
-<!---------------------------------{ Files }----------------------------------->
+<!----------------------------------{ Files }---------------------------------->
 
 [Changelog]: Documentation/Changelog.md
 [Install]: Documentation/Installation.md
+[License]: LICENSE
 [Usage]: Documentation/Usage.md
+
+
+<!---------------------------------{ Badges }---------------------------------->
+
+[Badge License]: https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
 
 
 <!--------------------------------{ Buttons }---------------------------------->
