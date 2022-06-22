@@ -48,7 +48,7 @@
 
 <!---------------------------------{ Badges }---------------------------------->
 
-[Badge License]: https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
+[Badge License]: https://img.shields.io/badge/License-MIT-e5ab42.svg?style=for-the-badge
 
 
 <!--------------------------------{ Buttons }---------------------------------->
