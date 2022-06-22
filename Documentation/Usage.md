@@ -1,65 +1,122 @@
-## Usage
 
-Add the following to your `package.json`
+# Usage
+
+<br>
+
+## Steps
+
+Add the following to your `package.json` :
 
 ```json
-"prettier": "prettier-config-atomic",
-"scripts": {
-  "format": "prettier --write .",
-  "test.format": "prettier . --check"
+"prettier" : "prettier-config-atomic" ,
+"scripts" : {
+    "test.format" : "prettier . --check" ,
+    "format" : "prettier --write ."
 }
 ```
 
-and run `npm run format` to format the files. You can also use `npm run test.format` in the CI to test formatting of the project.
+<br>
+<br>
 
-To ignore some files from formatting, create a `.prettierignore` file and add the files to the list. This is usually the same as `gitignore`.
+## Formatting
 
+*To format your files, run:*
+
+```sh
+npm run format
 ```
+
+<br>
+<br>
+
+## Testing
+
+You can test the formatting by <br>
+running the following in the CI:
+    
+```sh
+npm run test.format
+```
+
+<br>
+<br>
+
+## Ignoring
+
+You can use a `.prettierignore` file, to not <br>
+formatting specific items, in the same way <br>
+you do with a `.gitignore` file.
+
+```prettierignore
 node_modules
-pnpm-lock.yaml
+
 package-lock.json
+pnpm-lock.yaml
+
 CHANGELOG.md
+
+# Build Folder
+
 dist
 ```
 
-Notice that the built folders like `dist` are in the above list.
+<br>
+<br>
 
-### Modifying the config
+## Modifications
 
-Instead of adding the `prettier` entry to `package.json`, create a `prettier.config.js` file at the root of the project with the following content:
+Create a `prettier.config.js` file in the <br>
+root of your project instead of adding the <br>
+`prettier` entry to the `package.json`.
 
-```js
+```javascript
 module.exports = {
-  ...require("prettier-config-atomic"),
-
-  // add the modifications here:
-
-  // an example:
-  // semi: true,
+    
+    ... require('prettier-config-atomic') ,
+    
+    
+    /*
+     *  Add your modification here.
+     */
+    
+    
+    // Example
+    semi : true
 }
 ```
 
-### GitHub Action Lint Job:
+<br>
+<br>
+
+## GitHub Action
+
+*Creating a linter job.*
 
 ```yaml
 Lint:
-  if: "!contains(github.event.head_commit.message, '[skip ci]')"
-  runs-on: ubuntu-latest
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: Commit lint ✨
-      uses: wagoid/commitlint-github-action@v2
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Format ✨
-      run: npm run test.format
-
-    - name: Lint ✨
-      run: npm run test.lint
+    if : '! contains(github.event.head_commit.message,"[skip ci]")'
+    runs-on : ubuntu-latest
+    
+    env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    steps:
+    - 
+        uses : actions/checkout@v2
+        with:
+            fetch-depth : 0
+    - 
+        name : Commit Lint ✨
+        uses : wagoid/commitlint-github-action@v2
+    - 
+        name : Install Dependencies
+        run : npm install
+    - 
+        name : Format ✨
+        run : npm run test.format
+    - 
+        name : Lint ✨
+        run : npm run test.lint
 ```
+
+<br>

@@ -33,11 +33,11 @@ in your `devDependencies` by yourself.
 
 ## Installing
 
-```sh
+```shell
 npm install     \
     --save-dev  \
     prettier-config-atomic
 ```
 
-
+<br>
 
