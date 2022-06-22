@@ -3,9 +3,11 @@
 
 <br>
 
-## Steps
+## Configuration
 
 Add the following to your `package.json` :
+
+<br>
 
 ```json
 "prettier" : "prettier-config-atomic" ,
@@ -22,6 +24,8 @@ Add the following to your `package.json` :
 
 *To format your files, run:*
 
+<br>
+
 ```sh
 npm run format
 ```
@@ -33,6 +37,8 @@ npm run format
 
 You can test the formatting by <br>
 running the following in the CI:
+    
+<br>
     
 ```sh
 npm run test.format
@@ -47,7 +53,9 @@ You can use a `.prettierignore` file, to not <br>
 formatting specific items, in the same way <br>
 you do with a `.gitignore` file.
 
-```prettierignore
+<br>
+
+```gitignore
 node_modules
 
 package-lock.json
@@ -68,6 +76,8 @@ dist
 Create a `prettier.config.js` file in the <br>
 root of your project instead of adding the <br>
 `prettier` entry to the `package.json`.
+
+<br>
 
 ```javascript
 module.exports = {
@@ -91,6 +101,8 @@ module.exports = {
 ## GitHub Action
 
 *Creating a linter job.*
+
+<br>
 
 ```yaml
 Lint:
