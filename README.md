@@ -21,7 +21,7 @@
 
 ## Supported Formats
 
-This config supports all the formats including:
+*The config supports all formats including:*
 
 - <kbd>   **TypeScript**   </kbd>
 - <kbd>   **JavaScript**   </kbd>
