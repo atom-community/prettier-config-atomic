@@ -1,55 +1,93 @@
-// Modified from https://github.com/matzkoh/prettier-plugin-packagejson to use the custom sort-package.json package
-function prettier_plugin_packagejson() {
-  function requireSafe(path) {
-    try {
-      return require(path)
-    } catch (error) {
-      // no operations
+
+const plugins = [ require('prettier-plugin-jsdoc') ];
+
+
+/*
+ *  Modified from https://github.com/matzkoh/prettier-plugin-packagejson 
+ *  to use the custom sort-package.json package
+ */
+
+{
+    
+    function requireSafe(path){
+        try { return require(path); }
+        catch () {}
     }
-  }
+    
+    
+    //  Static
+    
+    const isPackageJSON = /(^|\\|\/)package\.json$/;
 
-  const { parsers } = requireSafe("prettier/parser-babel") || requireSafe("prettier/parser-babylon")
-  const sortPackageJson = require("sort-package-json")
-  const parser = parsers["json-stringify"]
+    const
+        parser_babylon = 'prettier/parser-babylon' ,
+        parser_babel = 'prettier/parser-babel' ,
+        package_sort = 'sort-package-json' ;
+    
+    
+    //  Imports
 
-  return {
-    parsers: {
-      "json-stringify": {
-        ...parser,
-        preprocess(text_given, options) {
-          let text = text_given
-          if (parser.preprocess) {
-            text = parser.preprocess(text, options)
-          }
+    const sort = require(package_sort);
 
-          return options.filepath && /(^|\\|\/)package\.json$/.test(options.filepath) ? sortPackageJson(text) : text
-        },
-      },
-    },
-  }
+    const { parsers } = 
+        requireSafe(parser_babel) ?? 
+        requireSafe(parser_babylon);
+    
+    
+    //  Parser
+    
+    const parser = parsers['json-stringify'];
+    
+    function preprocess(text,options){
+        
+        if(parser.preprocess)
+            text = parser.preprocess(text,options);
+
+        const { filepath } = options;
+        
+        if(filePath && isPackageJSON.test(filepath))
+            return sort(text);
+        
+        return text;
+    }
+
+    
+    //  Plugin
+
+    plugins.push({
+        parsers : {
+            'json-stringify' : { 
+                ... parser , preprocess 
+            }
+        }
+    });
 }
 
+
+
+const overrides = [{
+    files : '{*.json}',
+    options : {
+        trailingComma: 'es5' ,
+        parser : 'json'
+    }
+},{
+    files : '{*.md}',
+    options : {
+        proseWrap : 'preserve',
+        parser : 'markdown'
+    }
+}]
+
+
 module.exports = {
-  plugins: [require("prettier-plugin-jsdoc"), prettier_plugin_packagejson()],
-  tabWidth: 2,
-  printWidth: 120,
-  semi: false,
-  singleQuote: false,
-  tsdoc: true,
-  overrides: [
-    {
-      files: "{*.json}",
-      options: {
-        parser: "json",
-        trailingComma: "es5",
-      },
-    },
-    {
-      files: "{*.md}",
-      options: {
-        parser: "markdown",
-        proseWrap: "preserve",
-      },
-    },
-  ],
+    
+    singleQuote : false ,
+    printWidth : 120 ,
+    tabWidth : 2 ,
+    tsdoc : true ,
+    semi : false ,
+    
+    overrides ,
+    plugins
 }
