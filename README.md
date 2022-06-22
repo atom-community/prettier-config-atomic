@@ -23,11 +23,11 @@
 
 This config supports all the formats including:
 
-- **TypeScript**
-- **JavaScript**
-- **Markdown**
-- **YAML**
-- **JSON**
+- <kbd>   **TypeScript**   </kbd>
+- <kbd>   **JavaScript**   </kbd>
+- <kbd>   **Markdown**   </kbd>
+- <kbd>   **YAML**   </kbd>
+- <kbd>   **JSON**   </kbd>
 
 <br>
 
