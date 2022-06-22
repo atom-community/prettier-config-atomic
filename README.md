@@ -21,13 +21,13 @@
 
 ## Supported Formats
 
-This config supports all the formats including:
+*The config supports all formats including:*
 
-- **TypeScript**
-- **JavaScript**
-- **Markdown**
-- **YAML**
-- **JSON**
+- <kbd>   **TypeScript**   </kbd>
+- <kbd>   **JavaScript**   </kbd>
+- <kbd>   **Markdown**   </kbd>
+- <kbd>   **YAML**   </kbd>
+- <kbd>   **JSON**   </kbd>
 
 <br>
 
@@ -48,7 +48,7 @@ This config supports all the formats including:
 
 <!---------------------------------{ Badges }---------------------------------->
 
-[Badge License]: https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
+[Badge License]: https://img.shields.io/badge/License-MIT-e5ab42.svg?style=for-the-badge
 
 
 <!--------------------------------{ Buttons }---------------------------------->
