@@ -35,12 +35,12 @@ This config supports all the formats including:
 <!----------------------------------------------------------------------------->
 
 [Atom-Community]: https://github.com/atom-community
+[Changelog]: https://github.com/atom-community/prettier-config-atomic/releases/
 [Prettier]: https://prettier.io/
 
 
 <!----------------------------------{ Files }---------------------------------->
 
-[Changelog]: Documentation/Changelog.md
 [Install]: Documentation/Installation.md
 [License]: LICENSE
 [Usage]: Documentation/Usage.md
