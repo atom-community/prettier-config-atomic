@@ -11,14 +11,14 @@
   ],
   "scripts": {
     "bump": "ncu -u",
-    "format": "prettier --write .",
+    "format": "prettier --plugin-search-dir=./ --write ./",
     "lint": "eslint . --fix",
-    "test.format": "prettier . --check",
+    "test.format": "prettier --plugin-search-dir=./ ./ --check",
     "test.lint": "eslint ."
   },
   "dependencies": {
     "prettier": "2.7.1",
-    "prettier-plugin-jsdoc": "^0.3.38",
+    "prettier-plugin-jsdoc": "^0.4.2",
     "prettier-plugin-packagejson": "^2.2.18",
     "sort-package-json": "github:aminya/sort-package-json"
   },
