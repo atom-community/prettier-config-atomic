@@ -6,12 +6,12 @@ importers:
     specifiers:
       eslint-config-atomic: ^1.18.1
       prettier: 2.7.1
-      prettier-plugin-jsdoc: ^0.3.38
+      prettier-plugin-jsdoc: ^0.4.2
       prettier-plugin-packagejson: ^2.2.18
       sort-package-json: github:aminya/sort-package-json
     dependencies:
       prettier: 2.7.1
-      prettier-plugin-jsdoc: 0.3.38_prettier@2.7.1
+      prettier-plugin-jsdoc: 0.4.2_prettier@2.7.1
       prettier-plugin-packagejson: 2.2.18_prettier@2.7.1
       sort-package-json: github.com/aminya/sort-package-json/076051b58be7b198732d1ce2b9a415ccd0c63a97
     devDependencies:
@@ -962,6 +962,7 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -973,7 +974,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
-    dev: true
 
   /decode-named-character-reference/1.0.2:
     resolution: {integrity: sha512-O8x12RzrUF8xyVcY0KJowWsmaJxQbmy0/EtnNtHRpsOcT7dFk5W598coHqBVpmWo1oQQfsCqfCmkZN5DJrZVdg==}
@@ -2425,7 +2425,7 @@ packages:
     resolution: {integrity: sha512-ryTDy6UUunOXy2HPjelppgJ2sNfcPz1pLlMdA6Rz9jPzhLikWXv/irpWV/I2jd68Uhmny7hHxAlAhk4+vWggpg==}
     dependencies:
       '@types/debug': 4.1.7
-      debug: 4.3.3
+      debug: 4.3.4
       decode-named-character-reference: 1.0.2
       micromark-core-commonmark: 1.0.6
       micromark-factory-space: 1.0.0
@@ -2670,8 +2670,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-jsdoc/0.3.38_prettier@2.7.1:
-    resolution: {integrity: sha512-h81ZV/nFk5gr3fzWMWzWoz/M/8FneAZxscT7DVSy+5jMIuWYnBFZfSswVKYZyTaZ5r6+6k4hpFTDWhRp85C1tg==}
+  /prettier-plugin-jsdoc/0.4.2_prettier@2.7.1:
+    resolution: {integrity: sha512-w2jnAQm3z0GAG0bhzVJeehzDtrhGMSxJjit5ApCc2oxWfc7+jmLAkbtdOXaSpfwZz3IWkk+PiQPeRrLNpbM+Mw==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       prettier: '>=2.1.2'

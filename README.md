@@ -32,8 +32,8 @@ Add the following to your `package.json`
 ```json
 "prettier": "prettier-config-atomic",
 "scripts": {
-  "format": "prettier --write .",
-  "test.format": "prettier . --check"
+  "format": "prettier --plugin-search-dir=./ --write .",
+  "test.format": "prettier --plugin-search-dir=./ . --check"
 }
 ```
 
