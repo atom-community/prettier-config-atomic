@@ -51,5 +51,12 @@ module.exports = {
         proseWrap: "preserve",
       },
     },
+    {
+      files: "{*.mdx}",
+      options: {
+        parser: "mdx",
+        proseWrap: "preserve",
+      },
+    },
   ],
 }
