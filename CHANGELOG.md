@@ -1,3 +1,15 @@
+# [3.1.0](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.11...v3.1.0) (2022-09-04)
+
+
+### Bug Fixes
+
+* update dependencies ([aa27598](https://github.com/atom-community/prettier-config-atomic/commit/aa2759832899fa2080add2bf0fe5e7a246585b38))
+
+
+### Features
+
+* support mdx ([8af55b5](https://github.com/atom-community/prettier-config-atomic/commit/8af55b5ab9993ef511aa16af1e9943e516b276b7))
+
 ## [3.0.11](https://github.com/atom-community/prettier-config-atomic/compare/v3.0.10...v3.0.11) (2022-07-03)
 
 
