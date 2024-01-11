@@ -5,14 +5,18 @@
   "repository": "https://github.com/atom-community/prettier-config-atomic",
   "license": "MIT",
   "author": "Amin Yahyaabadi",
-  "main": "./prettier.config.js",
+  "type": "module",
+  "main": "dist/prettier.config.js",
   "files": [
-    "prettier.config.js"
+    "dist",
+    "src"
   ],
   "scripts": {
+    "build": "tsc -p tsconfig.json --pretty",
     "bump": "ncu -u",
     "format": "prettier --write ./",
     "lint": "eslint . --fix",
+    "prepare": "pnpm run build",
     "test.format": "prettier ./ --check",
     "test.lint": "eslint ."
   },
