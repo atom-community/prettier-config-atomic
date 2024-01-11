@@ -4,26 +4,24 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
+dependencies:
+  prettier:
+    specifier: 3.1.1
+    version: 3.1.1
+  prettier-plugin-jsdoc:
+    specifier: ^1.3.0
+    version: 1.3.0(prettier@3.1.1)
+  prettier-plugin-packagejson:
+    specifier: ^2.4.9
+    version: 2.4.9(prettier@3.1.1)
+  sort-package-json:
+    specifier: github:aminya/sort-package-json
+    version: github.com/aminya/sort-package-json/076051b58be7b198732d1ce2b9a415ccd0c63a97
 
-  .:
-    dependencies:
-      prettier:
-        specifier: 3.1.1
-        version: 3.1.1
-      prettier-plugin-jsdoc:
-        specifier: ^1.3.0
-        version: 1.3.0(prettier@3.1.1)
-      prettier-plugin-packagejson:
-        specifier: ^2.4.9
-        version: 2.4.9(prettier@3.1.1)
-      sort-package-json:
-        specifier: github:aminya/sort-package-json
-        version: github.com/aminya/sort-package-json/076051b58be7b198732d1ce2b9a415ccd0c63a97
-    devDependencies:
-      eslint-config-atomic:
-        specifier: ^1.20.6
-        version: 1.20.6(eslint@7.32.0)
+devDependencies:
+  eslint-config-atomic:
+    specifier: ^1.20.6
+    version: 1.20.6(eslint@7.32.0)
 
 packages:
 
