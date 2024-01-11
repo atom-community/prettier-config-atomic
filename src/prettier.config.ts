@@ -1,7 +1,7 @@
 import { pluginPackageJson } from "./sort_package_json.js"
 import * as pluginJsDoc from "prettier-plugin-jsdoc"
 
-export default {
+const prettierConfig = {
   plugins: [pluginJsDoc, pluginPackageJson()],
   tabWidth: 2,
   printWidth: 120,
@@ -32,3 +32,4 @@ export default {
     },
   ],
 }
+export default prettierConfig
