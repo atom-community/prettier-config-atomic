@@ -39,7 +39,7 @@ jobs:
         run: pnpm run test.lint
 
       - name: Commit lint ✨
-        uses: wagoid/commitlint-github-action@v5
+        uses: wagoid/commitlint-github-action@v6
 
   Release:
     needs: [Lint]
