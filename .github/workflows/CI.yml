@@ -61,7 +61,7 @@ jobs:
         run: pnpm install
 
       - name: Release 🎉
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v6.0.0
         with:
           extends: |
             @atom-ide-community/semantic-release-npm-config
