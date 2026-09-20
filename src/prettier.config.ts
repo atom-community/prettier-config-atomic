@@ -1,4 +1,4 @@
-import { pluginPackageJson } from "./sort_package_json.js"
+import { pluginPackageJson } from "./sort_package_json.ts"
 import * as pluginJsDoc from "prettier-plugin-jsdoc"
 
 const prettierConfig = {
