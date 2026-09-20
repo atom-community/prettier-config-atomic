@@ -10,10 +10,10 @@ export function pluginPackageJson(): Plugin {
     parsers: {
       "json-stringify": {
         ...jsonStringifyParser,
-        preprocess(text_given: string, options: ParserOptions) {
+        async preprocess(text_given: string, options: ParserOptions) {
           let text = text_given
           if (jsonStringifyParser.preprocess) {
-            text = jsonStringifyParser.preprocess(text, options)
+            text = await jsonStringifyParser.preprocess(text, options)
           }
 
           return options.filepath && /(^|\\|\/)package\.json$/.test(options.filepath) ? sortPackageJson(text) : text

@@ -1,0 +1,5 @@
+allowBuilds:
+  core-js: true
+blockExoticSubdeps: false
+minimumReleaseAgeExclude:
+  - eslint-config-atomic@2.3.0

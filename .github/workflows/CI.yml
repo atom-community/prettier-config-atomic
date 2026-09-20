@@ -22,12 +22,10 @@ jobs:
 
       - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Setup PNPM
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8
+        uses: pnpm/action-setup@v6
 
       - name: Install ✨
         run: pnpm install
@@ -41,30 +39,30 @@ jobs:
       - name: Commit lint ✨
         uses: wagoid/commitlint-github-action@v5
 
-  Release:
-    needs: [Lint]
-    if: github.ref == 'refs/heads/master' &&
-      github.event.repository.fork == false
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v7
-        with:
-          node-version: 20
+  # Release:
+  #   needs: [Lint]
+  #   if: github.ref == 'refs/heads/master' &&
+  #     github.event.repository.fork == false
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v7
+  #       with:
+  #         node-version: 20
 
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8
+  #     - name: Setup PNPM
+  #       uses: pnpm/action-setup@v4
+  #       with:
+  #         version: 8
 
-      - name: Install ✨
-        run: pnpm install
+  #     - name: Install ✨
+  #       run: pnpm install
 
-      - name: Release 🎉
-        uses: cycjimmy/semantic-release-action@v2
-        with:
-          extends: |
-            @atom-ide-community/semantic-release-npm-config
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN  }}
+  #     - name: Release 🎉
+  #       uses: cycjimmy/semantic-release-action@v2
+  #       with:
+  #         extends: |
+  #           @atom-ide-community/semantic-release-npm-config
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         NPM_TOKEN: ${{ secrets.NPM_TOKEN  }}
