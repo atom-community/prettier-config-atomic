@@ -42,5 +42,5 @@
     "globify-gitignore": "^1.0.3",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
-  "packageManager": "pnpm@12.5.1"
+  "packageManager": "pnpm@12.6.0"
 }
